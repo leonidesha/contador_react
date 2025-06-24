@@ -1,4 +1,5 @@
 README - Contador de Números en React
+
 ===== Descripción del Proyecto =====
 
 Este proyecto es un contador de números desarrollado con React que permite:
