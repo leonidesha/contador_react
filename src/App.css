@@ -2,7 +2,6 @@
 body {
   color: #00ffff;
   background-color: #000000;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
   padding: 20px;
 }
@@ -31,11 +30,23 @@ button:hover {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+}
+
+#contenedor {
+  display: flex;
+  flex-direction: column;
+  border-color: white;
+  border-radius: 2px;
+  border-style: solid;
+  padding: 30px;
+  height: fit-content;
+  width: fit-content;
+  min-width: 350px;
 }
 #etiqueta {
   font-size: 24px;
   color: #00ffff;
   margin-right: 20px;
   font-family: "Roboto", sans-serif;
+  min-width: 200px;
 }

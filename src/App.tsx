@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 function App() {
   const [valor, setValor] = React.useState(0);
@@ -15,13 +15,18 @@ function App() {
     setValor(0);
   };
   return (
-    <div id="app">
-      <label id="etiqueta">Número:</label>
-      <label id="etiqueta">{valor}</label>
-      <button onClick={handleClickIncrease}>+</button>
-      <button onClick={handleClickDecrease}>-</button>
-      <button onClick={handleClickReset}>R</button>
-    </div>
+    <>
+      <div id="contenedor">
+        <h1>Contador</h1>
+        <div id="app">
+          <label id="etiqueta">Número:</label>
+          <label id="etiqueta">{valor}</label>
+          <button onClick={handleClickIncrease}>+</button>
+          <button onClick={handleClickDecrease}>-</button>
+          <button onClick={handleClickReset}>R</button>
+        </div>
+      </div>
+    </>
   );
 }
 
