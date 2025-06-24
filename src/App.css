@@ -1,8 +1,41 @@
+/* This file contains the styles for the React application */
 body {
   color: #00ffff;
   background-color: #000000;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
-    sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
   padding: 20px;
+}
+button {
+  background-color: #00ffff;
+  color: #000000;
+  border: 2px solid #00ffff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.1s;
+  font-family: "Roboto", sans-serif;
+}
+
+button:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 8px #00ffff55 inset;
+}
+button:hover {
+  box-shadow: 0 4px 12px #00ffff55;
+  text-shadow: 0 4px 12px #000;
+}
+#div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+#etiqueta {
+  font-size: 24px;
+  color: #00ffff;
+  margin-right: 20px;
+  font-family: "Roboto", sans-serif;
 }
